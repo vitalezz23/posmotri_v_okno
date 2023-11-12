@@ -48,6 +48,7 @@ ol {
 }
 
 .content {
+  margin-block: 133px;
   display: flex;
   align-items: flex-end;
   gap: 30px;

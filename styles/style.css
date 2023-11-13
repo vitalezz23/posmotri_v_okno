@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: grid;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -48,8 +50,6 @@ ol {
 }
 
 .content {
-  margin-block: 133px;
-  margin-inline: 30px;
   display: flex;
   align-items: flex-end;
   gap: 30px;
@@ -57,10 +57,26 @@ ol {
 }
 
 .search-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
 }
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 26px;
+  inline-size: 100%;
+  block-size: 100%;
+} 
+  
+  .content__list {
+    position: relative;
+    block-size: 298px;
+    overflow: auto;
+  }
+  
 
 .search-form__fieldset {
   border: 0;
@@ -159,15 +175,6 @@ ol {
   min-block-size: 34px;
 }
 
-.content__details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 26px;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
 .title {
   font-family: Oswald, sans-serif;
   font-size: 75px;
@@ -181,11 +188,6 @@ ol {
   color: #545050;
 }
 
-.content__list {
-  position: relative;
-  block-size: 298px;
-  overflow: auto;
-}
 
 .content__list-item:not(:last-of-type) {
   margin-block-end: 30px;
